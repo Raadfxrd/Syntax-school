@@ -1,7 +1,6 @@
 // Importeer de benodigde bibliotheken
 import hljs from "highlight.js";
-import { marked, Renderer } from "marked";
-import { MarkedOptions } from "marked";
+import {marked, MarkedOptions, Renderer} from "marked";
 
 // Haal de elementen op
 const titleInput: HTMLInputElement = document.getElementById("title") as HTMLInputElement;
@@ -21,7 +20,7 @@ const renderer: Renderer = new Renderer();
 // Voeg event listeners toe
 titleInput.addEventListener("keyup", async function () {
     if (this.value.trim() !== "") {
-        titleOutput.innerHTML = await marked(this.value, { renderer: renderer } as MarkedOptions);
+        titleOutput.innerHTML = await marked(this.value, {renderer: renderer} as MarkedOptions);
         titleOutput.style.display = "block"; // Toon het uitvoervak
     } else {
         titleOutput.innerHTML = ""; // Maak de uitvoer leeg
@@ -33,7 +32,7 @@ titleInput.addEventListener("keyup", async function () {
 
 descriptionInput.addEventListener("keyup", async function () {
     if (this.value.trim() !== "") {
-        descriptionOutput.innerHTML = await marked(this.value, { renderer: renderer } as MarkedOptions);
+        descriptionOutput.innerHTML = await marked(this.value, {renderer: renderer} as MarkedOptions);
         descriptionOutput.style.display = "block"; // Toon het uitvoervak
     } else {
         descriptionOutput.innerHTML = ""; // Maak de uitvoer leeg

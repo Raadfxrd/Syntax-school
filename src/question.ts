@@ -1,6 +1,6 @@
-import { api } from "@hboictcloud/api";
+import {api} from "@hboictcloud/api";
 import hljs from "highlight.js";
-import { MarkedOptions, marked } from "marked";
+import {marked, MarkedOptions} from "marked";
 
 marked.setOptions({
     renderer: new marked.Renderer(),
@@ -35,7 +35,9 @@ interface Question {
     fullname: string;
     averageRating: number | string;
 }
+
 document.documentElement.style.overflow = "hidden";
+
 async function searchQuestions(query: string): Promise<Question[]> {
     try {
         const result: any = await api.queryDatabase(
@@ -255,4 +257,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-export { searchQuestions, performSearch };
+export {searchQuestions, performSearch};

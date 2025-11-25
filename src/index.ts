@@ -1,5 +1,5 @@
-import { api } from "@hboictcloud/api";
-import { User } from "./models/user";
+import {api} from "@hboictcloud/api";
+import {User} from "./models/user";
 import "./config";
 
 /**

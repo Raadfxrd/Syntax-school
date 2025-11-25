@@ -1,5 +1,5 @@
 import "./config";
-import { session, api } from "@hboictcloud/api";
+import {api, session} from "@hboictcloud/api";
 
 const loggedIn: number | null = session.get("user");
 

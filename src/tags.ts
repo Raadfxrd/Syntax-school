@@ -1,4 +1,4 @@
-import { api, session } from "@hboictcloud/api";
+import {api, session} from "@hboictcloud/api";
 
 document.addEventListener("DOMContentLoaded", async () => {
     const loggedIn: number | null = session.get("user");

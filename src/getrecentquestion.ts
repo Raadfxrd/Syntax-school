@@ -1,7 +1,7 @@
 import "./config";
-import { api, utils } from "@hboictcloud/api";
+import {api, utils} from "@hboictcloud/api";
 import hljs from "highlight.js";
-import { MarkedOptions, marked } from "marked";
+import {marked, MarkedOptions} from "marked";
 
 marked.setOptions({
     renderer: new marked.Renderer(),

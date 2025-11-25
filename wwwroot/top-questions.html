@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Syntax</title>
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Syntax</title>
 
-        <link rel="stylesheet" href="./assets/css/navbar.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/sidebar.css" />
-        <link rel="stylesheet" href="./assets/css/questions.css" />
+    <link href="./assets/css/navbar.css" rel="stylesheet"/>
+    <link href="./assets/css/style.css" rel="stylesheet"/>
+    <link href="./assets/css/sidebar.css" rel="stylesheet"/>
+    <link href="./assets/css/questions.css" rel="stylesheet"/>
 
-        <script src="../src/navbar.ts" type="module" defer></script>
-        <script src="../src/gettopquestion.ts" type="module" defer></script>
+    <script defer src="../src/navbar.ts" type="module"></script>
+    <script defer src="../src/gettopquestion.ts" type="module"></script>
 
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dark.min.css"
-        />
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
-    </head>
-    <body>
-        <div id="navbar-container"></div>
-        <div class="container">
-            <div class="sidebar">
-                <a href="recent-questions.html">Recent Questions</a>
-                <a href="top-questions.html" class="active">Top Questions</a>
-                <a href="about.html">About us</a>
-            </div>
-            <div class="content">
-                <h1 class="maintitle">Top questions asked by the community!</h1>
-                <div id="recent-questions-container">
-                    <div id="question-list"></div>
-                </div>
-            </div>
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/dark.min.css"
+        rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+</head>
+<body>
+<div id="navbar-container"></div>
+<div class="container">
+    <div class="sidebar">
+        <a href="recent-questions.html">Recent Questions</a>
+        <a class="active" href="top-questions.html">Top Questions</a>
+        <a href="about.html">About us</a>
+    </div>
+    <div class="content">
+        <h1 class="maintitle">Top questions asked by the community!</h1>
+        <div id="recent-questions-container">
+            <div id="question-list"></div>
         </div>
-        <a href="newquestion.html" class="button question-ask" title="Ask a question">New question</a>
-    </body>
+    </div>
+</div>
+<a class="button question-ask" href="newquestion.html" title="Ask a question">New question</a>
+</body>
 </html>

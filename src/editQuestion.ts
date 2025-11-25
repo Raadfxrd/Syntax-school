@@ -1,8 +1,7 @@
 // Importeer de benodigde bibliotheken
 import hljs from "highlight.js";
-import { marked, Renderer } from "marked";
-import { MarkedOptions } from "marked";
-import { api, session } from "@hboictcloud/api";
+import {marked, MarkedOptions, Renderer} from "marked";
+import {api, session} from "@hboictcloud/api";
 
 document.addEventListener("DOMContentLoaded", async () => {
     await loadQuestionDetails();

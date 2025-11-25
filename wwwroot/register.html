@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Registration Form</title>
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Registration Form</title>
 
-        <link rel="stylesheet" href="./assets/css/navbar.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/register.css" />
+    <link href="./assets/css/navbar.css" rel="stylesheet"/>
+    <link href="./assets/css/style.css" rel="stylesheet"/>
+    <link href="./assets/css/register.css" rel="stylesheet"/>
 
-        <script src="/src/navbar.ts" type="module"></script>
-        <script src="../src/register.ts" type="module"></script>
+    <script src="/src/navbar.ts" type="module"></script>
+    <script src="../src/register.ts" type="module"></script>
 
-        <script src="https://kit.fontawesome.com/da624eaea8.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="navbar-container"></div>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/da624eaea8.js"></script>
+</head>
+<body>
+<div id="navbar-container"></div>
 
-        <div class="registration-center">
-            <div class="registration-container">
-                <form action="#" method="post">
-                    <h1>Register</h1>
-                    <div id="error-container-username" style="display: none; color: red">
-                        Username already exists.
-                    </div>
-                    <div id="error-container-password" style="display: none; color: red">
-                        Password doesn't match.
-                    </div>
-                    <div id="error-container-fields" style="display: none; color: red">
-                        Please fill out each field.
-                    </div>
-                    <div id="error-container-email" style="display: none; color: red">
-                        Please enter a valid email address.
-                    </div>
-                    <div id="success-message" style="display: none; color: green">
-                        Registration succesful!
-                    </div>
-                    <br />
-                    <label for="First-Name">First Name</label>
-                    <input type="text" id="name" name="name" required />
-
-                    <label for="Last-Name">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" required />
-
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required />
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
-
-                    <label for="password">Password</label>
-                    <div class="password-container">
-                        <input type="password" id="password" name="password" />
-                        <i id="password-icon" class="password-icon fas fa-eye"></i>
-                    </div>
-
-                    <label for="confirm-password">Confirm Password</label>
-                    <div class="password-container">
-                        <input type="password" id="confirm-password" name="confirm-password" />
-                        <i id="confirm-password-icon" class="password-icon fas fa-eye"></i>
-                    </div>
-
-                    <button class="button register-btn" style="vertical-align: middle" type="submit">
-                        <span>Register </span>
-                    </button>
-                </form>
+<div class="registration-center">
+    <div class="registration-container">
+        <form action="#" method="post">
+            <h1>Register</h1>
+            <div id="error-container-username" style="display: none; color: red">
+                Username already exists.
             </div>
-        </div>
-    </body>
+            <div id="error-container-password" style="display: none; color: red">
+                Password doesn't match.
+            </div>
+            <div id="error-container-fields" style="display: none; color: red">
+                Please fill out each field.
+            </div>
+            <div id="error-container-email" style="display: none; color: red">
+                Please enter a valid email address.
+            </div>
+            <div id="success-message" style="display: none; color: green">
+                Registration succesful!
+            </div>
+            <br/>
+            <label for="First-Name">First Name</label>
+            <input id="name" name="name" required type="text"/>
+
+            <label for="Last-Name">Last Name</label>
+            <input id="lastname" name="lastname" required type="text"/>
+
+            <label for="username">Username</label>
+            <input id="username" name="username" required type="text"/>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" required type="email"/>
+
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input id="password" name="password" type="password"/>
+                <i class="password-icon fas fa-eye" id="password-icon"></i>
+            </div>
+
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-container">
+                <input id="confirm-password" name="confirm-password" type="password"/>
+                <i class="password-icon fas fa-eye" id="confirm-password-icon"></i>
+            </div>
+
+            <button class="button register-btn" style="vertical-align: middle" type="submit">
+                <span>Register </span>
+            </button>
+        </form>
+    </div>
+</div>
+</body>
 </html>

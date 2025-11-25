@@ -1,109 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>User Details</title>
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>User Details</title>
 
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/navbar.css" />
-        <link rel="stylesheet" href="./assets/css/user.css" />
+    <link href="./assets/css/style.css" rel="stylesheet"/>
+    <link href="./assets/css/navbar.css" rel="stylesheet"/>
+    <link href="./assets/css/user.css" rel="stylesheet"/>
 
-        <script type="module" src="../src/userdetails.ts"></script>
-        <script src="/src/navbar.ts" type="module"></script>
-        <script src="/src/test.ts" type="module"></script>
-    </head>
-    <body>
-        <div id="navbar-container"></div>
-        <div class="user-details-container">
-            <h1 class="user-details">User Details</h1>
-            <div id="user-info">
-                <p>
-                    <strong>Naam:</strong>
-                    <span id="user-firstname"></span>
-                    <span id="user-lastname"></span>
-                </p>
-                <input type="file" id="fileUpload" accept="image/png, image/jpeg" />
-                <img
-                    src="./assets/images/image.jpg"
-                    alt="profile picture"
-                    class="profile_picture"
-                    id="imagePreview"
-                />
-                <div id="imageUploadButtons" style="display: none">
-                    <button id="saveButton" style="background-color: green; color: white">Save</button>
-                    <button id="cancelButton" style="background-color: red; color: white">Cancel</button>
-                </div>
-                <div>
-                    <button id="deleteProfilePicButton" style="background-color: red; color: white">
-                        Delete Profile Picture
-                    </button>
-                </div>
-                <p>
-                    <button id="edit-name-btn">Change Name</button>
-                </p>
-                <p>
-                    <button id="edit-password-btn">Change Password</button>
-                </p>
-                <p>
-                    <button id="delete-account-btn" style="background-color: red; color: white">
-                        Delete Account
-                    </button>
-                </p>
-                <div id="password-fields" style="display: none; flex-wrap: wrap; justify-content: end">
-                    <div id="password-fail" style="display: none; color: red; margin-bottom: 10px">
-                        Failed to change password. Please check your current password.
-                    </div>
-                    <div id="passwordSucces" style="display: none; color: green; flex-grow: 1">
-                        Password successfully changed
-                    </div>
-                    <div id="passwordMatch-error" style="display: none; color: red; flex-grow: 1">
-                        New password and confirmation do not match
-                    </div>
-                    <br />
-                    <br />
-                    <label for="current-password" style="flex-grow: 1">Current Password: </label>
-                    <input type="password" id="current-password" />
-                    <br />
-                    <label for="new-password" style="flex-grow: 1" ;>New Password: </label>
-                    <input type="password" id="new-password" />
-                    <br />
-                    <label for="confirm-new-password" style="flex-grow: 1">Confirm New Password: </label>
-                    <input type="password" id="confirm-new-password" />
-                    <br />
-                    <button id="save-password">Save Password</button>
-                    <button id="cancel-password">Cancel</button>
-                </div>
-                <div id="nameError" style="display: none; color: red; margin-bottom: 10px">
-                    Please enter both first and last names.
-                </div>
-
-                <div id="edit-fields" style="display: none">
-                    <label for="new-firstname">New firstname: </label>
-                    <input type="text" id="new-firstname" />
-                    <br />
-                    <label for="new-lastname">New lastname: </label>
-                    <input type="text" id="new-lastname" />
-                    <br />
-                    <button id="save-changes">Save changes</button>
-                    <button id="cancel-edit">Cancel changes</button>
-                </div>
-                <div id="deleteFail" style="display: none; color: red">
-                    Failed to delete account. Please enter the correct confirmation text.
-                </div>
-                <div id="confirmation-modal" style="display: none">
-                    <p>Type <span style="color: red"> CONFIRM DELETE </span> to confirm this process</p>
-                    <p>
-                        <strong>Note:</strong> Deleting your account will also remove all your messages and
-                        responses.
-                    </p>
-                    <input type="text" id="confirmation-input" />
-                    <button id="confirm-delete" style="background-color: red; color: white">
-                        Confirm Delete
-                    </button>
-                    <button id="cancel-delete">Cancel</button>
-                </div>
-            </div>
+    <script src="../src/userdetails.ts" type="module"></script>
+    <script src="/src/navbar.ts" type="module"></script>
+    <script src="/src/test.ts" type="module"></script>
+</head>
+<body>
+<div id="navbar-container"></div>
+<div class="user-details-container">
+    <h1 class="user-details">User Details</h1>
+    <div id="user-info">
+        <p>
+            <strong>Naam:</strong>
+            <span id="user-firstname"></span>
+            <span id="user-lastname"></span>
+        </p>
+        <input accept="image/png, image/jpeg" id="fileUpload" type="file"/>
+        <img
+            alt="profile picture"
+            class="profile_picture"
+            id="imagePreview"
+            src="./assets/images/image.jpg"
+        />
+        <div id="imageUploadButtons" style="display: none">
+            <button id="saveButton" style="background-color: green; color: white">Save</button>
+            <button id="cancelButton" style="background-color: red; color: white">Cancel</button>
         </div>
-    </body>
+        <div>
+            <button id="deleteProfilePicButton" style="background-color: red; color: white">
+                Delete Profile Picture
+            </button>
+        </div>
+        <p>
+            <button id="edit-name-btn">Change Name</button>
+        </p>
+        <p>
+            <button id="edit-password-btn">Change Password</button>
+        </p>
+        <p>
+            <button id="delete-account-btn" style="background-color: red; color: white">
+                Delete Account
+            </button>
+        </p>
+        <div id="password-fields" style="display: none; flex-wrap: wrap; justify-content: end">
+            <div id="password-fail" style="display: none; color: red; margin-bottom: 10px">
+                Failed to change password. Please check your current password.
+            </div>
+            <div id="passwordSucces" style="display: none; color: green; flex-grow: 1">
+                Password successfully changed
+            </div>
+            <div id="passwordMatch-error" style="display: none; color: red; flex-grow: 1">
+                New password and confirmation do not match
+            </div>
+            <br/>
+            <br/>
+            <label for="current-password" style="flex-grow: 1">Current Password: </label>
+            <input id="current-password" type="password"/>
+            <br/>
+            <label ; for="new-password" style="flex-grow: 1">New Password: </label>
+            <input id="new-password" type="password"/>
+            <br/>
+            <label for="confirm-new-password" style="flex-grow: 1">Confirm New Password: </label>
+            <input id="confirm-new-password" type="password"/>
+            <br/>
+            <button id="save-password">Save Password</button>
+            <button id="cancel-password">Cancel</button>
+        </div>
+        <div id="nameError" style="display: none; color: red; margin-bottom: 10px">
+            Please enter both first and last names.
+        </div>
+
+        <div id="edit-fields" style="display: none">
+            <label for="new-firstname">New firstname: </label>
+            <input id="new-firstname" type="text"/>
+            <br/>
+            <label for="new-lastname">New lastname: </label>
+            <input id="new-lastname" type="text"/>
+            <br/>
+            <button id="save-changes">Save changes</button>
+            <button id="cancel-edit">Cancel changes</button>
+        </div>
+        <div id="deleteFail" style="display: none; color: red">
+            Failed to delete account. Please enter the correct confirmation text.
+        </div>
+        <div id="confirmation-modal" style="display: none">
+            <p>Type <span style="color: red"> CONFIRM DELETE </span> to confirm this process</p>
+            <p>
+                <strong>Note:</strong> Deleting your account will also remove all your messages and
+                responses.
+            </p>
+            <input id="confirmation-input" type="text"/>
+            <button id="confirm-delete" style="background-color: red; color: white">
+                Confirm Delete
+            </button>
+            <button id="cancel-delete">Cancel</button>
+        </div>
+    </div>
+</div>
+</body>
 </html>

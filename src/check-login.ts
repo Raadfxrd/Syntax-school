@@ -1,4 +1,4 @@
-import { session } from "@hboictcloud/api";
+import {session} from "@hboictcloud/api";
 
 // checkt of user is ingelogd
 function checkLoginStatus(): void {

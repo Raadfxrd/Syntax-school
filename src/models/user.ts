@@ -1,12 +1,4 @@
 export class User {
-    // private fields
-    private _id: number;
-    private _username: string;
-    private _email: string;
-    private _firstname: string;
-    private _lastname: string;
-
-    // De constructor wordt eenmalig aangeroepen als de class wordt geïnstantieerd.
     // Deze constructor vult de fields bij het aanmaken van een object.
     public constructor(id: number, username: string, email: string, firstname: string, lastname: string) {
         this._id = id;
@@ -16,41 +8,54 @@ export class User {
         this._lastname = lastname;
     }
 
+    // private fields
+    private _id: number;
+
     // Getters en setters
     public get id(): number {
         return this._id;
-    }
-
-    public get username(): string {
-        return this._username;
-    }
-
-    public get email(): string {
-        return this._email;
-    }
-
-    public get firstname(): string {
-        return this._firstname;
-    }
-
-    public get lastname(): string {
-        return this._lastname;
     }
 
     public set id(value: number) {
         this._id = value;
     }
 
+    private _username: string;
+
+    // De constructor wordt eenmalig aangeroepen als de class wordt geïnstantieerd.
+
+    public get username(): string {
+        return this._username;
+    }
+
     public set username(value: string) {
         this._username = value;
+    }
+
+    private _email: string;
+
+    public get email(): string {
+        return this._email;
     }
 
     public set email(value: string) {
         this._email = value;
     }
 
+    private _firstname: string;
+
+    public get firstname(): string {
+        return this._firstname;
+    }
+
     public set firstname(value: string) {
         this._firstname = value;
+    }
+
+    private _lastname: string;
+
+    public get lastname(): string {
+        return this._lastname;
     }
 
     public set lastname(value: string) {

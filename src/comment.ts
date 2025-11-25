@@ -1,4 +1,4 @@
-import { api, session } from "@hboictcloud/api";
+import {api, session} from "@hboictcloud/api";
 
 document.addEventListener("DOMContentLoaded", async () => {
     const loggedInUserId: number | null = session.get("user");
@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         getComments();
 
         commentForm.addEventListener("submit", submitComment);
+
         async function submitComment(event: Event): Promise<void> {
             event.preventDefault();
 

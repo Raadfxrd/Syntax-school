@@ -1,5 +1,5 @@
 import "./config";
-import { api, session, url } from "@hboictcloud/api";
+import {api, session, url} from "@hboictcloud/api";
 
 /**
  * Deze methode wordt aangeroepen als de pagina is geladen, dat gebeurt helemaal onderin!

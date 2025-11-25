@@ -1,6 +1,6 @@
 // register.ts
 import "./config";
-import { api } from "@hboictcloud/api";
+import {api} from "@hboictcloud/api";
 
 class RegistrationManager {
     public constructor() {
@@ -28,6 +28,7 @@ class RegistrationManager {
             });
         }
     }
+
     // Afhandelen registratie
     private async handleRegistration(): Promise<void> {
         try {
@@ -137,18 +138,18 @@ class RegistrationManager {
             document.getElementById("error-container-password")!,
             document.getElementById("success-message")!,
         ];
-    
+
         elementsToHide.forEach((element) => {
             if (element && element !== errorElement) {
                 element.style.display = "none";
             }
         });
-    
+
         if (errorElement) {
             errorElement.style.display = "block";
         }
     }
-    
+
     // Toon succesbericht en verberg andere foutmeldingen
     private showSuccess(successMessage: HTMLElement | null): void {
         const elementsToHide: HTMLElement[] = [
@@ -157,17 +158,18 @@ class RegistrationManager {
             document.getElementById("error-container-email")!,
             document.getElementById("error-container-password")!,
         ];
-    
+
         elementsToHide.forEach((element) => {
             if (element) {
                 element.style.display = "none";
             }
         });
-    
+
         if (successMessage) {
             successMessage.style.display = "block";
         }
     }
 }
+
 // Dit start de registratiemanager
 new RegistrationManager();

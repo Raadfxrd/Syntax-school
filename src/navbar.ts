@@ -1,5 +1,5 @@
 import "./config";
-import { utils, session, api } from "@hboictcloud/api";
+import {api, session, utils} from "@hboictcloud/api";
 
 const parsedHtml: NodeList = await utils.fetchAndParseHtml("/assets/html/navbar.html");
 
@@ -18,7 +18,7 @@ if (loggedIn) {
 
     profilePic!.style.display = "block";
 
-    if(profilePicExists){
+    if (profilePicExists) {
         (document.querySelector("#profilePic") as HTMLImageElement).src = `https://kaalaaqaapii58-pb2a2324.hbo-ict.cloud/uploads/user${loggedIn}/profile.jpg`;
     }
 

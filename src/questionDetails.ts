@@ -1,8 +1,8 @@
 import hljs from "highlight.js";
-import { MarkedOptions, marked } from "marked";
-import { User } from "./models/user";
-import { api, session } from "@hboictcloud/api";
-import { getUserInfo } from ".";
+import {marked, MarkedOptions} from "marked";
+import {User} from "./models/user";
+import {api, session} from "@hboictcloud/api";
+import {getUserInfo} from ".";
 
 marked.setOptions({
     renderer: new marked.Renderer(),
