@@ -1,6 +1,6 @@
-# Stack Exchange
+# Syntax
 
-![Stack Exchange](wwwroot/assets/images/Stack-Exchange.png)
+![Syntax](wwwroot/assets/images/Stack-Exchange.png)
 
 A Q&A platform for HBO-ICT students to share knowledge and solve programming problems.
 
@@ -25,7 +25,7 @@ A Q&A platform for HBO-ICT students to share knowledge and solve programming pro
 
 ## About
 
-Stack Exchange is a community-driven Q&A platform specifically designed for HBO-ICT students. Similar to Stack
+Syntax is a community-driven Q&A platform specifically designed for HBO-ICT students. Similar to Stack
 Overflow, it enables students to post questions, share answers, and build collective knowledge about HBO-ICT
 related programming problems and development environments.
 
